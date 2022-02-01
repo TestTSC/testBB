@@ -1,0 +1,70 @@
+<!DOCTYPE HTML SYSTEM>
+<html>
+<head>
+	<title>Scalable tests</title>
+
+	<style>
+
+		.blueEl
+		{
+			background-color: RGB(0, 0, 255);
+			height: 32px;
+			width: 128px;
+			color: RGB(255, 255, 255);
+		}
+
+
+		.redEl
+		{
+			background-color: RGB(255, 0, 0);
+			height: 32px;
+			width: 128px;
+		}
+
+
+		.sqrEl
+		{
+			height: 32px;
+			width: 32px;
+		}
+		.sqrElBig
+		{
+			height: 64px;
+			width: 64px;
+		}
+
+	</style>
+
+
+</head>
+
+<body>
+	<table>
+		<tr>
+			<td>
+				<h3>  Textbox  </h3>
+				TextBox 1: <input type="text" id="textbox1" value="" size="20"><br>
+				TextBox 2: <input type="text" name="textbox1" value="" size="20"><br>
+				TextBox 3: <input type="text" value="" size="20"><br>
+				TextBox 4: <input type="text" class="blueEl" value="" size="20"><br>
+				TextBox 5: <input type="text" data-test="itextbox" value="" size="20"><br>
+			</td>
+			<td>
+			        <h3>  Button  </h3>
+				<input type="button" id="button11" value="Button 11">
+				<input type="button" name="button12" value="Button 12">
+				<input type="button" value="Button 13">
+				<input type="button" class="redEl" value="Button 14">
+				<input type="button" value="Button 15" data-test="ibutton">
+			</td>
+			<td>
+				<h3>  Frames  </h3>
+				<iframe src="testf2.html" width="512" height="256" align="left">
+				</iframe>
+			</td>
+		</tr>
+	</table>
+
+</body>
+
+</html>

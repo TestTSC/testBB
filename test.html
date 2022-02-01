@@ -1,0 +1,201 @@
+<!DOCTYPE HTML SYSTEM>
+<html>
+<head>
+	<title>Scalable tests</title>
+
+	<style>
+
+		.blueEl
+		{
+			background-color: RGB(0, 0, 255);
+			height: 32px;
+			width: 128px;
+			color: RGB(255, 255, 255);
+		}
+
+
+		.redEl
+		{
+			background-color: RGB(255, 0, 0);
+			height: 32px;
+			width: 128px;
+		}
+
+
+		.sqrEl
+		{
+			height: 32px;
+			width: 32px;
+		}
+		.sqrElBig
+		{
+			height: 64px;
+			width: 64px;
+		}
+
+	</style>
+
+
+</head>
+
+<body>
+	<table>
+		<tr>
+			<td>
+				<h3>  Textbox  </h3>
+				TextBox 1: <input type="text" id="textbox1" value="" size="20"><br>
+				TextBox 2: <input type="text" name="textbox1" value="" size="20"><br>
+				TextBox 3: <input type="text" value="" size="20"><br>
+				TextBox 4: <input type="text" class="blueEl" value="" size="20"><br>
+				TextBox 5: <input type="text" data-test="textbox" value="" size="20"><br>
+			</td>
+    			<td>
+				<h3>  Password  </h3>
+				Password 1: <input type="password" id="password1" value="" size="20"><br>
+				Password 2: <input type="password" name="password1" value="" size="20"><br>
+				Password 3: <input type="password" value="" size="20"><br>
+				Password 4: <input type="password" class="blueEl" value="" size="20"><br>
+				Password 5: <input type="password" data-test="password" value="" size="20"><br>
+			</td>
+			<td>
+				<h3>  CheckBox  </h3>
+				<input type="checkbox" id="checkbox1">CheckBox 1<br>
+				<input type="checkbox" name="checkbox2">CheckBox 2<br>
+				<input type="checkbox">CheckBox 3<br>
+				<input type="checkbox" class="sqrEl">CheckBox 4<br>
+				<input type="checkbox" data-test="checkbox">CheckBox 5<br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>  Button  </h3>
+				<input type="button" id="button1" value="Button 1">
+				<input type="button" name="button2" value="Button 2">
+				<input type="button" value="Button 3">
+				<input type="button" class="redEl" value="Button 4">
+				<input type="button" value="Button 5" data-button="test">
+				<div>
+					<input type="button" id="button6" value="Button 6">
+					<input type="button" name="button7" value="Button 7">
+					<input type="button" value="Button 8">
+					<input type="button" class="redEl" value="Button 9">
+					<input type="button" value="Button 10" data-test="button">
+				</div>
+			</td>
+			<td>
+				<h3>  RadioButton  </h3>
+				<input type="radio" id="radiobutton1">RadioButton 1<br>
+				<input type="radio" name="radiobutton2">RadioButton 2<br>
+				<input type="radio">RadioButton 3<br>
+				<input type="radio" class="sqrEl">RadioButton 4<br>
+				<input type="radio" data-test="radio">RadioButton 5<br>
+			</td>
+			<td>
+				<h3>  Number  </h3>
+				Number 1: <input type="number" id="number1" min="1" max="5"><br>
+				Number 2: <input type="number" name="number2" min="0" max="10"><br>
+				Number 3: <input type="number" min="-5" max="5"><br>
+				Number 4: <input type="number" class="sqrEl" min="1" max="5"><br>
+				Number 5: <input type="number" data-test="number" min="-5" max="-1"><br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>  Slider  </h3>
+				Slider 1: <input type="range" id="slider1" min="1" max="5"><br>
+				Slider 2: <input type="range" name="slider2" min="0" max="10"><br>
+				Slider 3: <input type="range" min="-5" max="5"><br>
+				Slider 4: <input type="range" class="sqrElBig" min="1" max="5"><br>
+				Slider 5: <input type="range" data-test="range" min="-5" max="-1"><br>
+			</td>
+			<td>
+				<h3>  ComboBox  </h3>
+				ComboBox 1: <select id="combobox1">
+					<option value="volvo">Volvo</option>
+					<option value="saab">Saab</option>
+					<option value="opel">Opel</option>
+				</select><br>
+				ComboBox 2: <select name="combobox2">
+					<option value="audi">Audi</option>
+					<option value="bmv">BMV</option>
+					<option value="lada">Lada</option>
+				</select><br>
+				ComboBox 3: <select>
+					<option value="bugatti">Bugatti</option>
+					<option value="datsun">Datsun</option>
+					<option value="jaguar">Jaguar</option>
+				</select><br>
+				ComboBox 4: <select class="sqrElBig">
+					<option value="honda">Honda</option>
+					<option value="hyundai">Hyundai</option>
+					<option value="kia">Kia</option>
+				</select><br>
+				ComboBox 5: <select data-test="combobox">
+					<option value="lexus">Lexus</option>
+					<option value="ford">Ford</option>
+					<option value="ferrari">Ferrari</option>
+				</select><br>
+			</td>
+			<td>
+				<h3>  ListBox  </h3>
+				ListBox 1: <select id="listbox1" size="3">
+					<option value="jeep">Jeep</option>
+					<option value="dodge">Dodge</option>
+					<option value="daewoo">Daewoo</option>
+				</select><br>
+				ListBox 2: <select name="listbox2" size="3">
+					<option value="hummer">Hummer</option>
+					<option value="infiniti">Infiniti</option>
+					<option value="chrysler">Chrysler</option>
+				</select><br>
+				ListBox 3: <select size="3">
+					<option value="lamborghini">Lamborghini</option>
+					<option value="mitsubishi">Mitsubishi</option>
+					<option value="peugeot">Peugeot</option>
+				</select><br>
+				ListBox 4: <select class="sqrElBig" size="3">
+					<option value="lincoln">Lincoln</option>
+					<option value="volkswagen">Volkswagen</option>
+					<option value="tesla">Tesla</option>
+				</select><br>
+				ListBox 5: <select data-test="listbox" size="3">
+					<option value="subaru">Subaru</option>
+					<option value="skoda">Skoda</option>
+					<option value="ssangyong">SsangYong</option>
+				</select><br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p id="my_SuperLabel">Input with a label</p>
+				<input type="text" aria-labelledby="my_SuperLabel">
+			</td>
+			<td>
+				<p id="my_SuperDescription">Input with a description</p>
+				<input type="text" aria-describedby="my_SuperDescription">
+			</td>
+			<td>
+				<label for="01270000000M9ztAAC">TextBox</label><br/>
+				<textarea id="01270000000M9ztAAC"></textarea>
+			</td>
+		</tr>
+	</table>
+	<br>
+	<br>
+        <h3>  Other Buttons  </h3>
+		<input type="button" id="button11" value="Button 11">
+		<input type="button" name="button12" value="Button 12">
+		<input type="button" value="Button 13">
+		<input type="button" class="redEl" value="Button 14">
+		<input type="button" value="Button 15" data-test="button2">
+
+        <h3>  Frames  </h3>
+
+ 		<iframe src="testf1.html" width="1024" height="256" align="left">
+
+ 		</iframe>
+
+
+</body>
+
+</html>

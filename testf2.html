@@ -1,0 +1,57 @@
+<!DOCTYPE HTML SYSTEM>
+<html>
+<head>
+	<title>Scalable tests</title>
+
+	<style>
+
+		.blueEl
+		{
+			background-color: RGB(0, 0, 255);
+			height: 32px;
+			width: 128px;
+			color: RGB(255, 255, 255);
+		}
+
+
+		.redEl
+		{
+			background-color: RGB(255, 0, 0);
+			height: 32px;
+			width: 128px;
+		}
+
+
+		.sqrEl
+		{
+			height: 32px;
+			width: 32px;
+		}
+		.sqrElBig
+		{
+			height: 64px;
+			width: 64px;
+		}
+
+	</style>
+
+
+</head>
+
+<body>
+	<h3>  Button  </h3>
+	<input type="button" id="button11" value="Button 11">
+	<input type="button" name="button12" value="Button 12">
+	<input type="button" value="Button 13">
+	<input type="button" class="redEl" value="Button 14">
+	<input type="button" value="Button 15" data-test="iibutton">
+
+	<h3>  RadioGroup  </h3>
+	<input type="radio" name="radiogroup" id="radiobutton1">
+	<label for="radiobutton1">RadioButton 1</label><br>
+	<input type="radio" name="radiogroup" id="radiobutton2">
+	<label for="radiobutton2">RadioButton 2</label>
+
+</body>
+
+</html>
